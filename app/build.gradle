@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "kim.hsl.long_graph_loading"
+        applicationId "kim.hsl.lgl"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1

@@ -1,4 +1,4 @@
-package kim.hsl.long_graph_loading;
+package kim.hsl.lgl;
 
 import org.junit.Test;
 

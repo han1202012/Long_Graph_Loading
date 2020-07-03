@@ -1,4 +1,4 @@
-package kim.hsl.long_graph_loading;
+package kim.hsl.lgl;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("kim.hsl.long_graph_loading", appContext.getPackageName());
+        assertEquals("kim.hsl.lgl", appContext.getPackageName());
     }
 }
