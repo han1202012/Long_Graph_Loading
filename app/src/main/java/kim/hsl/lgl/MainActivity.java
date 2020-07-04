@@ -27,7 +27,26 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(stringFromJNI());
 
         // 显示剪切后的正方形图像
-        showImage();
+        //showImage();
+
+        LongImageView longImageView = findViewById(R.id.longImageView);
+        InputStream inputStream = null;
+        try {
+            // 获取 Assets 文件的输入流
+            inputStream = getAssets().open("bitmap_region_decoder.png");
+            // 设置并显示图片
+            longImageView.setImage(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(inputStream != null){
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     private void showImage(){
