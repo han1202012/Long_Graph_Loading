@@ -361,8 +361,6 @@ public class LongImageView extends View implements GestureDetector.OnGestureList
         return false;
     }
 
-
-
     /*
         下面的方法是触摸监听器实现方法
      */
